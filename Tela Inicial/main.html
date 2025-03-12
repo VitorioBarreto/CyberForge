@@ -1,0 +1,278 @@
+<!-- Código desenvolvido por: Equipe CyberForge -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CYBERFORGE</title>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div class="navTop">
+        <div class="navItem">
+          <img
+            src="./img/logo.png"
+            alt="CYBERFORGE"
+            class="logo"
+            style="width: 200px; height: auto"
+          />
+        </div>
+        <div class="navItem searchContainer">
+          <div class="search">
+            <input
+              type="text"
+              placeholder="Busque aqui seu produto"
+              class="searchInput"
+            />
+            <button class="searchButton">
+              <img
+                src="./img/search.png"
+                width="20"
+                height="20"
+                alt=""
+                class="searchIcon"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="navItem userActions">
+          <div class="userMenu">
+            <a href="#" class="menuLink">Atendimento</a>
+            <a href="#" class="menuLink">Meus Pedidos</a>
+            <a href="../index.html" class="loginButton">
+              <i class="fas fa-user"></i>
+              Logar
+            </a>
+            <a href="#" class="cartButton">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cartCount">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navBottom">
+        <div class="categoryMenu">
+          <button class="allCategories">
+            <i class="fas fa-bars"></i>
+            TODAS AS CATEGORIAS
+          </button>
+          <div class="menuItems">
+            <a href="#" class="menuItem">HARDWARE</a>
+            <a href="#" class="menuItem">PERIFÉRICOS</a>
+            <a href="#" class="menuItem">COMPUTADORES</a>
+            <a href="#" class="menuItem">NOTEBOOKS</a>
+            <a href="#" class="menuItem">OFERTAS</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="slider">
+      <div class="sliderWrapper">
+        <div class="sliderItem">
+          <div class="sliderContent">
+            <img src="./imagens/notebook/10.png" alt="" class="sliderImg" />
+            <div class="sliderInfo">
+              <h1 class="sliderTitle">
+                SEU PC GAMER<br />
+                AQUI NO<br />
+                CYBERFORGE
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="sliderButton prev">❮</button>
+      <button class="sliderButton next">❯</button>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <img src="./img/shipping.png" alt="" class="featureIcon" />
+        <span class="featureTitle">TÍTULO 1</span>
+        <span class="featureDesc">Descrição 1</span>
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/return.png" alt="" />
+        <span class="featureTitle">TÍTULO 2</span>
+        <span class="featureDesc">Descrição 2</span>
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/gift.png" alt="" />
+        <span class="featureTitle">TÍTULO 3</span>
+        <span class="featureDesc">Descrição 3</span>
+      </div>
+      <div class="feature">
+        <img class="featureIcon" src="./img/contact.png" alt="" />
+        <span class="featureTitle">TÍTULO 4</span>
+        <span class="featureDesc">Descrição 4</span>
+      </div>
+    </div>
+
+    <div class="product" id="product">
+      <img src="./imagens/pc/preto.png" alt="" class="productImg" />
+      <div class="productDetails">
+        <h1 class="productTitle">RTX 4090 SUPER TUF OG OC GDDR6</h1>
+        <h2 class="productPrice">PROMOÇÃO</h2>
+        <button class="productButton">FORJAR</button>
+        <p class="productDesc">
+          A NVIDIA® GeForce RTX® 4090 é a GPU GeForce definitiva. Ele traz um
+          enorme salto em desempenho, eficiência e gráficos com inteligência
+          artificial. Experimente jogos de alto desempenho, mundos virtuais
+          incrivelmente detalhados, produtividade sem precedentes e novas
+          maneiras de criar. Equipada com a arquitetura NVIDIA Ada Lovelace, ela
+          vem com 24 GB de memória G6X para oferecer a melhor experiência para
+          jogadores e criadores.
+        </p>
+        <div class="colors">
+          <div class="color"></div>
+          <div class="color"></div>
+        </div>
+        <div class="sizes">
+          <div class="size">14GB</div>
+          <div class="size">16GB</div>
+          <div class="size">24GB</div>
+        </div>
+        <button class="productButton">FORJAR</button>
+      </div>
+      <div class="payment">
+        <h1 class="payTitle">Personal Information</h1>
+        <label>Name and Surname</label>
+        <input type="text" placeholder="John Doe" class="payInput" />
+        <label>Phone Number</label>
+        <input type="text" placeholder="+1 234 5678" class="payInput" />
+        <label>Address</label>
+        <input type="text" placeholder="Elton St 21 22-145" class="payInput" />
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+          <img src="./img/visa.png" width="40" alt="" class="cardIcon" />
+          <img src="./img/master.png" alt="" width="40" class="cardIcon" />
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number" />
+        <div class="cardInfo">
+          <input type="text" placeholder="mm" class="payInput sm" />
+          <input type="text" placeholder="yyyy" class="payInput sm" />
+          <input type="text" placeholder="cvv" class="payInput sm" />
+        </div>
+        <button class="payButton">Checkout!</button>
+        <span class="close">X</span>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="galleryItem">
+        <h1 class="galleryTitle">Facilidade e Agilidade</h1>
+        <img src="./imagens/pc/3.png" alt="" class="galleryImg" />
+      </div>
+      <div class="galleryItem">
+        <img src="./imagens/pc/2.png" alt="" class="galleryImg" />
+        <h1 class="galleryTitle">Tudo que você precisa em um único lugar</h1>
+      </div>
+      <div class="galleryItem">
+        <h1 class="galleryTitle">Periféricos e outros</h1>
+        <img src="./imagens/pc/1.png" alt="" class="galleryImg" />
+      </div>
+    </div>
+    <div class="newSeason">
+      <div class="nsItem">
+        <h3 class="nsTitleSm">CYBERFORGE</h3>
+        <h1 class="nsTitle">Viva a Experiência</h1>
+        <h1 class="nsTitle">Forge seu PC agora!!</h1>
+        <a href="../Forja/index.html">
+          <button class="nsButton">FORJAR</button>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="footerLeft">
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">About Us</h1>
+          <ul class="fList">
+            <li class="fListItem">Company</li>
+            <li class="fListItem">Contact</li>
+            <li class="fListItem">Careers</li>
+            <li class="fListItem">Affiliates</li>
+            <li class="fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Useful Links</h1>
+          <ul class="fList">
+            <li class="fListItem">Support</li>
+            <li class="fListItem">Refund</li>
+            <li class="fListItem">FAQ</li>
+            <li class="fListItem">Feedback</li>
+            <li class="fListItem">Stories</li>
+          </ul>
+        </div>
+        <div class="footerMenu">
+          <h1 class="fMenuTitle">Products</h1>
+          <ul class="fList">
+            <li class="fListItem">PLACA DE VÍDEO</li>
+            <li class="fListItem">PC GAMER</li>
+            <li class="fListItem">DESKTOP COMPLETO</li>
+            <li class="fListItem">HEADSET</li>
+            <li class="fListItem">HARDWARE</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerRight">
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+          <div class="fMail">
+            <input type="text" placeholder="your@email.com" class="fInput" />
+            <button class="fButton">Join!</button>
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <h1 class="fMenuTitle">Nos Siga</h1>
+          <div class="fIcons">
+            <img src="./img/facebook.png" alt="" class="fIcon" />
+            <img src="./img/twitter.png" alt="" class="fIcon" />
+            <img src="./img/instagram.png" alt="" class="fIcon" />
+            <img src="./img/whatsapp.png" alt="" class="fIcon" />
+          </div>
+        </div>
+        <div class="footerRightMenu">
+          <span class="copyright">@CyberForge. All rights reserved. 2024.</span>
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const slider = document.querySelector(".sliderWrapper");
+        const slides = document.querySelectorAll(".sliderItem");
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+        let currentSlide = 0;
+
+        function updateSlider() {
+          slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          updateSlider();
+        }
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          updateSlider();
+        }
+
+        prevButton.addEventListener("click", prevSlide);
+        nextButton.addEventListener("click", nextSlide);
+
+        // Autoplay
+        setInterval(nextSlide, 5000);
+      });
+    </script>
+  </body>
+</html>

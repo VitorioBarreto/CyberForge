@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#432f64, #432f64);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column; /* Organiza em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Remove a barra de rolagem */
+}
+
+h1{
+    font-size: 40px;
+    line-height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+  }
+
+/* Estilos adicionais para o cabeçalho */
+.header {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento embaixo do cabeçalho */
+}
+
+/* Barra de pesquisa */
+.search-box {
+    background: #ffffff;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Espaçamento embaixo da barra de pesquisa */
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .3s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+    color: #1e3754;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.search-box:hover > .search-txt {
+    width: 400px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+    background: #7E57C2;
+}
+
+/* Estilo dos botões de categorias */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    margin: 20px auto; /* Espaçamento em cima e embaixo da categoria */
+    width: 60%;
+}
+
+.category-btn {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white; /* Alterado para preto para melhor contraste */
+    font-size: 14px;
+    transition: background 0.3s, transform 0.3s;
+    width: 120px;
+}
+
+.category-btn i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.category-btn span {
+    display: block;
+    margin-top: 5px;
+}
+
+.category-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
